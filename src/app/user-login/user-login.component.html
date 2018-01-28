@@ -1,0 +1,27 @@
+<div *ngIf="result == 'true'" style="color: green">Login Success </div>
+<div *ngIf="result == 'false'" style="color: red">Login Failed </div>
+
+<h3>User Login. Please enter your credentials!!</h3>
+<div style="width: 300px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="username">User Name</label> <input type="text"
+                                                     class="form-control" id="username" required
+                                                     [(ngModel)]="userDetails.userName" name="username">
+    </div>
+
+    <div class="form-group">
+      <label for="pwd">Password</label> <input type="password"
+                                               class="form-control" id="pwd" required
+                                               [(ngModel)]="userDetails.pwd" name="pwd">
+    </div>
+    <div>
+
+    </div>
+
+    <div class="btn-group">
+      <button class="btn btn-primary" (click)="goBack()">Back</button>
+      <button type="submit" class="btn btn-success">Submit</button>
+    </div>
+  </form>
+</div>

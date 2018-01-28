@@ -1,0 +1,22 @@
+<h3>Generate a Batch report</h3>
+<div [hidden]="submitted" style="width: 300px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="batchStart">Batch Start</label> <input type="Date"
+                                                        class="form-control" id="batchStart" required
+                                                        [(ngModel)]="schedule.batchStart" name="batchStart">
+    </div>
+
+    <div class="form-group">
+      <label for="batchEnd">Batch End</label> <input type="Date"
+                                                     class="form-control" id="batchEnd" required
+                                                     [(ngModel)]="schedule.batchEnd" name="batchEnd">
+    </div>
+
+    <div class="btn-group">
+      <button class="btn btn-primary" (click)="goBack()">Back</button>
+      <button type="submit" class="btn btn-success">Submit</button>
+    </div>
+  </form>
+</div>
+

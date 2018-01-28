@@ -1,0 +1,19 @@
+.jumbotron
+{
+  padding-top: 20px;
+  padding-bottom:0px;
+  width: 100%; /* make sure to define width to fill container */
+  height: 900px; /* define the height in pixels or make sure   */
+  /* you have something in your div with height */
+  /* so you can see your image */
+  max-width:500px;  /* define the max width */
+}
+input.ng-invalid.ng-touched{
+  border: 1px solid red;
+}
+.help-block{
+  color: red;
+}
+select.ng-invalid.ng-touched{
+  border: 1px solid red;
+}
